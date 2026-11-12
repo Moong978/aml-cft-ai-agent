@@ -1,0 +1,42 @@
+import os
+
+TENANT_ID = os.getenv("TENANT_ID")
+CLIENT_ID = os.getenv("CLIENT_ID")
+CLIENT_SECRET = os.getenv("CLIENT_SECRET")
+SITE_ID = os.getenv("SITE_ID")
+DRIVE_ID = os.getenv("DRIVE_ID")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+SHAREPOINT_FOLDER = os.getenv("SHAREPOINT_FOLDER")
+FILE_PATTERN = os.getenv("FILE_PATTERN")
+
+BLACKLIST_PATTERN = "*Blacklist*.xlsx"
+WALLET_PATTERN = "*Wallet*.xlsx"
+IBMB_PATTERN = "*IBMB*.xlsx"
+
+WALLET_CUSTOMER_PATTERN = "Customers - Wallet*.xlsx"
+WALLET_TRANSACTION_PATTERN = "Wallet Transaction*.csv"
+
+AZURE_OPENAI_ENDPOINT = os.getenv("AZURE_OPENAI_ENDPOINT")
+AZURE_OPENAI_KEY = os.getenv("AZURE_OPENAI_KEY")
+AZURE_OPENAI_DEPLOYMENT = os.getenv("AZURE_OPENAI_DEPLOYMENT")
+AZURE_OPENAI_API_VERSION = os.getenv("AZURE_OPENAI_API_VERSION")
+
+#############################################
+# Customer Intelligence
+#############################################
+
+CUSTOMER_ROOT_FOLDER = os.getenv("CUSTOMER_ROOT_FOLDER")
+
+FACEBOOK_FOLDER = "Facebook"
+PLAYSTORE_FOLDER = "PlayStore"
+COMPETITOR_FOLDER = "Competitor"
+WALLET_FOLDER = "Wallet"
+IBMB_FOLDER = "IBMB"
+CAMPAIGN_FOLDER = "Campaign"
+CUSTOMER_FOLDER = "Customer"
+
+FACEBOOK_PATTERN = "Facebook*.json"
+PLAYSTORE_PATTERN = "PlayStore*.json"
+COMPETITOR_PATTERN = "*.md"
+CAMPAIGN_PATTERN = "Campaign*.xlsx"
+CUSTOMER_PATTERN = "Customers - CBS.xlsx"
